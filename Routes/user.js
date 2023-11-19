@@ -28,7 +28,7 @@ router.post("/signup", async (req, res) => {
 
         const verifyuser =new VerifyUser({ ...req.body, password: hashedPassword, token:token});
 
-        const activationLink = `http://localhost:8080/user/signup/${token}`;
+        const activationLink = `https://e-commerce-0a2b.onrender.com/user/signup/${token}`;
 
         const content = `<h4>Hi</h4>, <h2>Welcome to Sanjay's E-commerce App</h2>
         <h3>Please Click the link below to complete your Registration</h3>
